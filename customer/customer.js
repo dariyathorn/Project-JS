@@ -13,7 +13,7 @@ function hide(element){
 function displayList (){
     let main = document.querySelector(".main");
 
-    for(let index =0 ; index< arrayOfproduct.length ;index++) {
+    for(let index =0; index < arrayOfproduct.length; index++) {
         let product = arrayOfproduct[index];
         let card1 = document.createElement("div");
         card1.className = "card1";
@@ -50,30 +50,27 @@ function displayList (){
         console.log(main);
     }
 }
-displayList();
 
-function researchProduct(){
 
-////userInput search find a product
+// function searchpro(){
+//     let listpro = document.querySelectorAll(".main .card1");
+//     let researchpro = search.value;
+//     let text = researchpro.toLowerCase();
+    
+//     for (let value of listpro){
+//         let namelist = value.textContent.toLowerCase();
+//         let displaystyle =  "";
+//         if (namelist.indexOf(researchpro) >-1 ){
+//             displaystyle ="block";
+//         }
+//         else{
+//             displaystyle = "none";
+//         }
+//         value.style.display = displaystyle;
+//     }
+// }
+// let search = document.querySelector("research").querySelector("input");
+// search.addEventListener("keyup",searchpro);
 
-    let card = document.querySelectorAll(".card .card-btn");
-   
-    let word = getSearch.value;
-    let text = word.toLowerCase()
-    for (let value of card){
-        let valueOfSearch = value.textContent.toLowerCase();
-        let displyText = ""
-        if (valueOfSearch.indexOf(text)>-1){
-            displyText = "block";
-        }
-        else{
-            displyText = "none";
-        }
-        value.style.display = displyText;
-        console.log(value);
-        
-    }
-}
 
-let getSearch = document.querySelector(".input-text").querySelector("input");   //input
-getSearch.addEventListener("keyup",researchProduct)
+displayList ();
