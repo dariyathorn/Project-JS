@@ -23,8 +23,8 @@ function displayList (){
 
         let image = document.createElement("img");
         image.src = product.img;
-        image.style.width ="200px";
-        image.style.height ="200px";
+        image.style.width ="290px";
+        image.style.height ="230px";
 
         let p = document.createElement("p");
         p.textContent = product.detail;
@@ -52,6 +52,28 @@ function displayList (){
 }
 displayList();
 
-function research(){
-    
+function researchProduct(){
+
+////userInput search find a product
+
+    let card = document.querySelectorAll(".card .card-btn");
+   
+    let word = getSearch.value;
+    let text = word.toLowerCase()
+    for (let value of card){
+        let valueOfSearch = value.textContent.toLowerCase();
+        let displyText = ""
+        if (valueOfSearch.indexOf(text)>-1){
+            displyText = "block";
+        }
+        else{
+            displyText = "none";
+        }
+        value.style.display = displyText;
+        console.log(value);
+        
+    }
 }
+
+let getSearch = document.querySelector(".input-text").querySelector("input");   //input
+getSearch.addEventListener("keyup",researchProduct)
