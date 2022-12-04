@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seller</title>
+    <link rel="stylesheet" href="seller.css">
+</head>
+<body>
+    <nav>
+        <img src="../Image/logoPro-removebg-preview.png">
+        <div class="research">
+          <input type="search" id="research" name="gsearch">
+            <!-- <img src = "../Image/button-removebg-preview.png" width="30px"> -->
+        </div>
+        <div class="topnav">
+            <a href="../home/index.html">Home</a>
+            <a href="../sell/sell.html">Seller</a>
+            <a href="../customer.html">Customer</a>
+        </div>
+    </nav>
+        <h1>The product in my shop</h1>
+        <button id ="btn-add-product">Add new produt</button>
+          <div id="dailog_element" style="display: none;">
+            <dialog open>
+              <form action="" method="get" id="addItem">
+                <h1 class="form-title">CREATE</h1>
+                <!-- <div class="form-edit">edit</div> -->
+                
+                <div class="first-name">
+                  <label for="#">Name:</label>
+                  <input type="text" id="name" placeholder="name">
+                </div>
+                <div class="last-name">
+                  <label for="#">Detail:</label>
+                  <input type="text" id="detail" placeholder="Detail">
+                </div>
+                <div class="email">
+                  <label for="#">Price:</label>
+                  <input type="number" id="price" placeholder="price">
+                </div>
+                <div class="img">
+                  <label for="#">IMAGE</label>
+                  <input type="text" id="img" placeholder="Enter Image URL">
+                </div>
+                <div class="con">
+                  <button onclick="onCancel(event)" id="cancel">Cancel</button>
+                  <button onclick="onCreate(event)" id="create">Create</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <table id="list-product">
+            <thead>
+              <tr>
+                <th>IMAGES</th>
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>PRICE</th>
+                <th>Ation</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- for dislpaly table -->
+            </tbody>
+
+          </table>
+        </button>
+</body>
+<script src="./scricp/sell.js">
+</script>
+</html>

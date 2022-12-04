@@ -1,0 +1,115 @@
+body{
+  height: 100vh;
+  font-family: sans-serif;
+  color: black;
+  flex-direction: column;
+  /* background: #FDA488;  */
+  background-image: url(https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton--StFi_Louis_Vuitton_Almaty_250_2_v2_DI3.jpg);
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FF7F50;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 100px;
+}
+input{
+  display: flex;
+  width: 100%;
+  height: 80%;
+  background: wheat;
+  border-color: blue blue blue blue ;
+  /* border:none; */
+}
+.research{
+  flex-direction: row;
+  display: flex;
+  background: #FDA488;
+  border-radius: 20px;
+}
+#research{
+  display: flex;
+  width: 800px;
+  border-radius: 20px;
+}
+.topnav a{
+  text-decoration: none;
+  padding: 12px 14px;
+  float: left;
+  flex-direction: row;
+  display: flex;
+}
+main{
+    /* display: flex; */
+    flex-direction: row;
+
+}
+.data-form{
+  justify-content: center;
+  display: flex;
+  /* flex-direction: column; */
+}
+form{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-image: url(https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton--StFi_Louis_Vuitton_Almaty_250_2_v2_DI3.jpg);
+  padding: 10px;
+
+}
+input{
+  display: flex;
+  width: 500px;
+  height: 30px;
+  /* background: #000; */
+}
+#btn-add-product{
+  display: flex;
+  width: 130px;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
+  background: rgb(162, 226, 255);
+}
+/* button{
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  width: 740px;
+  height: 25px;
+} */
+.img-product{
+  width: 90px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+table{
+  border-collapse: collapse;
+  width: 80%;
+  justify-content: center;
+  /* align-items: center; */
+  background: rgb(241, 214, 163);
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+footer{
+  flex: 0.1;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  background: #FF7F50;
+  width: 100%;
+  font-size: 20px;
+}
